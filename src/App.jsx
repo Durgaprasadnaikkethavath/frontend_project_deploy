@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./Components/Navbar";
 import { BrowserRouter } from "react-router-dom";
 import ShopContextProvider from "./Context/ShopContext";
+import Hero from "./Components/Hero";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <BrowserRouter>
         <ShopContextProvider>
           <Navbar />
+          <Hero />
         </ShopContextProvider>
       </BrowserRouter>
     </div>
