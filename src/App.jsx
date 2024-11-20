@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./Components/Navbar";
 import { BrowserRouter } from "react-router-dom";
 import ShopContextProvider from "./Context/ShopContext";
+import ImageCarousel from "./Components/ImageCarousel";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <BrowserRouter>
         <ShopContextProvider>
           <Navbar />
+          <ImageCarousel />
         </ShopContextProvider>
       </BrowserRouter>
     </div>
