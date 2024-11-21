@@ -61,7 +61,7 @@ const Navbar = () => {
         </div>
         <div className="menubar">
           <div className="navbar-toggle" onClick={toggleMenu}>
-            {isMenuOpen ? "X" : "Menu"}
+            {isMenuOpen ? "X" : <ion-icon name="menu-outline"></ion-icon>}
           </div>
           {/* Conditional Rendering of Menu */}
           <div className="open_menu_bar">

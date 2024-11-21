@@ -12,6 +12,7 @@ import Cart from "./Pages/Cart";
 import Login from "./Pages/Login";
 import PlaceOrder from "./Pages/PlaceOrder";
 import Order from "./Pages/Order";
+import SearchBar from "./Components/SearchBar";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <ShopContextProvider>
           <ToastContainer />
           <Navbar />
+          <SearchBar />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/collection" element={<Collection />} />
